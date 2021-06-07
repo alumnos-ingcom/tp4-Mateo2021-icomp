@@ -1,3 +1,8 @@
+#################
+#Mateo2021-icomp
+# Conversor de temperatura (3)
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
 f = float(input("Ingrese grados Fahrenheit"))
 c = float(f - 32) * (5/9)
 print("La conversion de Fahrenheit a Celsius es: ", (c))
