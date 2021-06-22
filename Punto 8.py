@@ -1,25 +1,33 @@
 ################
 # Mateo2021-icomp
-# Plantilla de ejercicio
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
 
 # Ordenar 3 valores
 
-print("Bienvenido")
-print("Ingrese el primer numero")
-numero = int(input())
-print("Ingrese el segundo numero")
-numerodos = int(input())
-print("Ingrese el tercer numero")
-numerotres = int(input())
+def prueba():
+    print("Bienvenido")
+    uno = int(input("Ingrese el primer numero: "))
+    dos = int(input("Ingrese el segundo numero: "))
+    tres = int(input("Ingrese el tercer numero: "))
+    def ordenar_mayor_a_menor(uno, dos, tres):
+        globals
+        Primero = min (uno, dos, tres)
+        return Primero
 
-Primero = min (numero, numerodos, numerotres)
-Tercero= max (numero, numerodos, numerotres)
-Segundo = (numero + numerodos + numerotres) - Primero - Tercero
+    def ordenar_menor_a_mayor(uno, dos, tres):
+        globals
+        Tercero= max (uno, dos, tres)
+        return Tercero
 
-lista = (Primero, Segundo, Tercero)
-print(lista)
+    Primero = int(ordenar_mayor_a_menor(uno,dos,tres))
+    Tercero = int(ordenar_menor_a_mayor(uno,dos,tres))
+    Segundo = (uno + dos + tres) - Primero - Tercero
+    lista = (Primero, Segundo,Tercero)
+    listados = (Tercero, Segundo, Primero)
+    print('de menor a mayor es: ', lista)
+    print('y de mayor a menor es: ',listados)
 
-
+if __name__ == "__main__":
+    prueba()
