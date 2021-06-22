@@ -1,20 +1,24 @@
 ################
 # Mateo2021-icomp
-# Comparación de números (4)
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-print("Bienvenido")
-print("Ingrese el primer numero")
-n1 = int(input())
-print("Ingrese el segundo numero")
-n2 = int(input())
 
-if n1 < n2 :
-    print("El primero es menor que el segundo",(-1))
-    
-   
-if n1 == n2 :
-    print("Los numeros son iguales",(0))
-    
-if n1 > n2 :
-    print("El primero es mayor que el segundo",(1))
+#Comparacion de Numeros
+
+def prueba():
+    print("Bienvenido")
+    numero =  int(input("ingrese el primer numero: "))
+    otro_numero= int(input("ingrese el segundo numero: "))
+    def compara(numero, otro_numero):
+        if numero < otro_numero:
+            return -1
+        if numero > otro_numero:
+            return 1
+        if numero == otro_numero:
+            return 0
+    print("La comparacion de los numeros dice que: ",compara(numero, otro_numero))
+
+if __name__ == "__main__":
+    prueba()
+
+
